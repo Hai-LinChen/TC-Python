@@ -6,10 +6,18 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
 """
-This program is to map the compositional phase boundary of an extended phase in a quaternary
-system. For this purpose, single point calculations on many grids are utilized. By contrast,
-default ternary phase diagram mapping does not work very well, since only edges are determined
-on each section/diagram, which means that "holes" will be left.
+This program is to map the single-phase homogeneity range of an extended phase in a quaternary system and to make a 3D diagram. 
+
+To run this program, one needs
+(1) Thermo-Calc Software package, with TC-Python API
+(2) A thermodynamic database containing more than 4 components
+(3) Knowledge and experiences of Thermo-Calc will be a plus
+
+This program is to map the single-phase homogeneity range of an extended phase in a quaternary
+system.
+
+For this purpose, single point calculations on many grids are utilized. By contrast, default ternary phase diagram mapping does 
+not work very well, since only edges are determined on each section/diagram, which means that "holes" will be left.
 """
 
 def plot_3d(list_of_x, list_of_y, list_of_z, xlabel, ylabel, zlabel, title):
